@@ -1,13 +1,28 @@
-# # =============================
-# # MediaFlow Automator PRO
-# # Advanced Version with Custom Cut UI
-# # =============================
+# =============================
+# MediaFlow Automator PRO (FINAL VERSION)
+# =============================
 
 import subprocess
 import threading
 import queue
 import tkinter as tk
 from tkinter import filedialog, ttk, messagebox
+import os
+import sys
+
+# =============================
+# FFmpeg Path (PRO)
+# =============================
+
+def get_ffmpeg_path():
+    if getattr(sys, 'frozen', False):
+        base_path = sys._MEIPASS
+    else:
+        base_path = os.path.dirname(os.path.abspath(__file__))
+
+    return os.path.join(base_path, "ffmpeg.exe")
+
+FFMPEG_PATH = get_ffmpeg_path()
 
 # =============================
 # FFmpeg Runner
@@ -18,7 +33,9 @@ def run_ffmpeg(command, log_callback=None):
         command,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
-        text=True
+        text=True,
+        encoding="utf-8",
+        errors="ignore"
     )
 
     for line in process.stderr:
@@ -58,7 +75,7 @@ class TaskManager:
 
         while not self.tasks.empty():
             task = self.tasks.get()
-            self.log_callback(f"[▶] {task.name}\n")
+            self.log_callback(f"[▶] Running: {task.name}\n")
 
             run_ffmpeg(task.command, self.log_callback)
 
@@ -67,7 +84,7 @@ class TaskManager:
             self.progress_callback(progress)
 
         self.running = False
-        self.log_callback("\n[✓] Finished all tasks\n")
+        self.log_callback("\n[✓] All tasks completed\n")
 
 # =============================
 # GUI
@@ -81,13 +98,13 @@ class App:
 
         self.task_manager = TaskManager(self.log, self.update_progress)
 
-        # File selection
+        # File input
         self.file_entry = tk.Entry(root, width=70)
         self.file_entry.pack(pady=10)
 
         tk.Button(root, text="Select File", command=self.select_file).pack()
 
-        # CUT OPTIONS
+        # CUT SETTINGS
         cut_frame = tk.LabelFrame(root, text="Cut Settings", padx=10, pady=10)
         cut_frame.pack(pady=10)
 
@@ -101,7 +118,7 @@ class App:
         self.duration_entry.insert(0, "00:00:10")
         self.duration_entry.grid(row=1, column=1)
 
-        # Buttons
+        # BUTTONS
         btn_frame = tk.Frame(root)
         btn_frame.pack(pady=10)
 
@@ -109,7 +126,7 @@ class App:
         tk.Button(btn_frame, text="Extract Audio", command=self.extract_audio).grid(row=0, column=1, padx=5)
         tk.Button(btn_frame, text="Compress Video", command=self.compress_video).grid(row=0, column=2, padx=5)
 
-        # Progress bar
+        # Progress
         self.progress = ttk.Progressbar(root, length=500)
         self.progress.pack(pady=10)
 
@@ -151,7 +168,7 @@ class App:
         output = file.replace(".mp4", "_cut.mp4")
 
         command = [
-            "ffmpeg",
+            FFMPEG_PATH,
             "-i", file,
             "-ss", start,
             "-t", duration,
@@ -163,10 +180,15 @@ class App:
 
     def extract_audio(self):
         file = self.file_entry.get()
+
+        if not file:
+            messagebox.showerror("Error", "Select a file first")
+            return
+
         output = file.replace(".mp4", ".mp3")
 
         command = [
-            "ffmpeg",
+            FFMPEG_PATH,
             "-i", file,
             "-q:a", "0",
             "-map", "a",
@@ -177,10 +199,15 @@ class App:
 
     def compress_video(self):
         file = self.file_entry.get()
+
+        if not file:
+            messagebox.showerror("Error", "Select a file first")
+            return
+
         output = file.replace(".mp4", "_compressed.mp4")
 
         command = [
-            "ffmpeg",
+            FFMPEG_PATH,
             "-i", file,
             "-vcodec", "libx264",
             "-crf", "28",
@@ -197,19 +224,3 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = App(root)
     root.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
