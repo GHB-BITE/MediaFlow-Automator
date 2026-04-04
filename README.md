@@ -96,12 +96,6 @@ ffmpeg -version
 
 ---
 
-## ▶️ How to Run
-
-```bash
-python main.py
-```
-
 ---
 
 ## 🧪 Usage
