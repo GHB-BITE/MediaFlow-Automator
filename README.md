@@ -183,13 +183,4 @@ Pull requests are welcome. For major changes, please open an issue first.
 This project is open-source and free to use.
 
 ---
-
-## 👨‍💻 Author
-
-Developed by a Python Automation Developer 🚀
-
----
-
-## ⭐ Support
-
-If you like this project, consider giving it a **star ⭐ on GitHub**!
+Built with ❤️ by GHB-BITE
