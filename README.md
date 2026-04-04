@@ -8,6 +8,12 @@
 
 **MediaFlow Automator PRO** is a desktop application built with Python that allows you to automate video and audio processing tasks بسهولة وبدون تدخل يدوي.
 
+
+📸 Preview 🖼️ Interface
+
+<img width="880" height="711" alt="Capture" src="https://github.com/user-attachments/assets/16631bd0-2de0-44c7-ad78-d56f438e0a3f" />
+
+
 The tool provides a clean GUI (Tkinter-based) to:
 
 * Cut videos with custom timing
@@ -16,6 +22,16 @@ The tool provides a clean GUI (Tkinter-based) to:
 * Execute multiple tasks in a queue system
 
 ---
+
+🎥 Demo (How it works)
+
+
+
+![Animation4](https://github.com/user-attachments/assets/b6dae06b-d3a1-4aab-b5be-b8cc8e3421f3)
+
+
+
+
 
 ## ✨ Features
 
