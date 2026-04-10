@@ -21,25 +21,39 @@ Full control over your media processing:
 -📦 Batch processing for multiple files
 
 
+
+
+
 🔹 2. Media Organizer
 
 Automatically organize your files:
 
 📁 Sort files by format (mp4, mp3, mkv, etc.)
+
 🔍 Preview mode (Dry Run – no changes applied)
+
 🔁 Optional recursive folder processing
+
 ⚡ Fast and safe file moving
 
+
 🔹 3. Smart Task Manager
+
 FIFO task queue system
+
 Real-time progress tracking
+
 Detailed execution logs
+
 Start / Stop control anytime
 
 
 🔹 4. Advanced Console
+
 Live FFmpeg output display
+
 Error tracking and reporting
+
 Timestamped logs for each operation
 
 🖥️ User Interface
