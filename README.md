@@ -5,11 +5,6 @@ MediaFlow Automator PRO is a professional-grade desktop application designed to 
 
 ---
 
-## 🚀 Overview
-
-**MediaFlow Automator PRO** is a desktop application built with Python that allows you to automate video and audio processing tasks بسهولة وبدون تدخل يدوي.
-
-
 
 🎬 Core Features
 🔹 1. FFmpeg Automator
@@ -71,6 +66,8 @@ Choose an operation (Cut / Compress / Extract Audio)
 Add tasks to the queue
 Click Start
 Monitor progress in real time
+
+
 
 ---
 
