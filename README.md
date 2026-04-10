@@ -1,6 +1,7 @@
-# 🎬 MediaFlow Automator PRO
+# 🎬 MediaFlow Automator PRO — Ultimate Edition
+A Powerful Desktop Media Automation Toolkit built with Python & FFmpeg
 
-> Advanced Python Automation Tool for Video & Audio Processing using FFmpeg
+MediaFlow Automator PRO is a professional-grade desktop application designed to simplify, automate, and accelerate video/audio processing and media organization — all through a modern, user-friendly interface. 
 
 ---
 
@@ -9,172 +10,117 @@
 **MediaFlow Automator PRO** is a desktop application built with Python that allows you to automate video and audio processing tasks بسهولة وبدون تدخل يدوي.
 
 
+
+🎬 Core Features
+🔹 1. FFmpeg Automator
+
+Full control over your media processing:
+
+-✂ Video Cutting (Trim segments)
+-⬇ Video Compression (CRF-based)
+-🎵 Audio Extraction (MP3, WAV, AAC, etc.)
+-📦 Batch processing for multiple files
+
+
+🔹 2. Media Organizer
+
+Automatically organize your files:
+
+📁 Sort files by format (mp4, mp3, mkv, etc.)
+🔍 Preview mode (Dry Run – no changes applied)
+🔁 Optional recursive folder processing
+⚡ Fast and safe file moving
+
+🔹 3. Smart Task Manager
+FIFO task queue system
+Real-time progress tracking
+Detailed execution logs
+Start / Stop control anytime
+
+
+🔹 4. Advanced Console
+Live FFmpeg output display
+Error tracking and reporting
+Timestamped logs for each operation
+
+🖥️ User Interface
+
+A developer-inspired modern UI:
+
+🌙 Dark Mode design
+🎨 Dynamic color feedback (success, error, progress)
+🔔 Toast notifications after completion
+🧩 Modular and scalable layout
+
+
 📸 Preview 🖼️ Interface
 
-<img width="880" height="711" alt="Capture" src="https://github.com/user-attachments/assets/16631bd0-2de0-44c7-ad78-d56f438e0a3f" />
+<img width="960" height="751" alt="Capture" src="https://github.com/user-attachments/assets/cea5baf7-3a5a-4448-b666-f8a6f7484fcf" />
 
 
-The tool provides a clean GUI (Tkinter-based) to:
 
-* Cut videos with custom timing
-* Extract audio from video files
-* Compress videos efficiently
-* Execute multiple tasks in a queue system
+⚙️ Requirements
+Python 3.10+
+FFmpeg (included or installed in system PATH)
 
 ---
 
-🎥 Demo (How it works)
-
-
-
-![Animation4](https://github.com/user-attachments/assets/b6dae06b-d3a1-4aab-b5be-b8cc8e3421f3)
-
-
-
-
-
-## ✨ Features
-
-* 🎯 **Custom Video Cutting**
-
-  * Choose start time and duration manually
-
-* 🎧 **Audio Extraction**
-
-  * Convert video to high-quality MP3
-
-* 📉 **Video Compression**
-
-  * Reduce size using H.264 codec
-
-* ⚙️ **Task Queue System**
-
-  * Add multiple operations and process them automatically
-
-* 🔁 **Multithreading**
-
-  * Smooth UI without freezing
-
-* 📊 **Progress Tracking**
-
-  * Visual progress bar
-
-* 🧾 **Real-time Logs**
-
-  * Monitor FFmpeg execution output
+🧠 How It Works
+Select video files or an entire folder
+Choose an operation (Cut / Compress / Extract Audio)
+Add tasks to the queue
+Click Start
+Monitor progress in real time
 
 ---
 
-## 🖥️ User Interface
-
-Simple and clean interface built with `tkinter`:
-
-* File selection input
-* Cut settings panel (Start / Duration)
-* Action buttons
-* Progress bar
-* Logs console
+📊 Example Use Cases
+Convert multiple videos to MP3 in one click
+Compress large videos to save storage
+Trim specific segments from multiple clips
+Organize an entire media library automatically
 
 ---
 
-## 📦 Requirements
-
-* Python 3.8+
-* FFmpeg (must be installed and added to PATH)
-
-### 🔧 Install FFmpeg
-
-1. Download from: https://ffmpeg.org/download.html
-2. Extract الملفات
-3. Add `bin` folder to system PATH
-
-Verify installation:
-
-```bash
-ffmpeg -version
-```
+automatically
+🏗️ Architecture (For Developers)
+Tkinter → User Interface
+subprocess → FFmpeg execution
+threading → Non-blocking processing
+queue → Task management
+shutil → File operations
 
 ---
+💡 Business Value
+
+This is more than just a tool:
+
+✔ Saves hours of manual work
+✔ Eliminates complex workflows
+✔ Suitable for both beginners and professionals
+✔ Easily extendable for future needs
+
+--- 
+📈 Scalability & Future Improvements
+GPU acceleration support
+Web-based interface
+AI-powered video processing
+Export presets (YouTube, TikTok, etc.)
 
 ---
+👨‍💻 Developer Note
 
-## 🧪 Usage
+This project is built with a strong focus on:
 
-### 1. Select a video file
-
-Click **"Select File"**
-
-### 2. Choose operation
-
-#### ✂️ Cut Video
-
-* Enter:
-
-  * Start Time → `HH:MM:SS`
-  * Duration → `HH:MM:SS`
-
-#### 🎧 Extract Audio
-
-* Converts `.mp4` → `.mp3`
-
-#### 📉 Compress Video
-
-* Reduces size using CRF 28
-
-### 3. Start Processing
-
-Click **"Start Processing"**
+Performance ⚡
+User Experience 🎯
+Clean Architecture 🧠
+Scalability 🔧
 
 ---
+⭐ Final Thoughts
 
-## 🧠 How It Works
-
-* Uses `subprocess` to run FFmpeg commands
-* Tasks are stored in a queue
-* Executed in a separate thread
-* Logs are streamed in real-time
-
----
-
-## 📁 Output Files
-
-Generated files are saved in the same directory as the input file:
-
-| Operation      | Output Example       |
-| -------------- | -------------------- |
-| Cut Video      | video_cut.mp4        |
-| Extract Audio  | video.mp3            |
-| Compress Video | video_compressed.mp4 |
-
----
-
-## ⚠️ Notes
-
-* Make sure FFmpeg is correctly installed
-* File formats supported depend on FFmpeg
-* Large files may take time depending on system performance
-
----
-
-## 🔮 Future Improvements
-
-* 🎬 Video preview before cutting
-* 🎛️ Advanced encoding settings
-* 🎨 Modern UI (Dark Mode)
-* 📦 Export as `.exe`
-* 📊 Real FFmpeg progress parsing
-
----
-
-## 🤝 Contributing
-
-Pull requests are welcome. For major changes, please open an issue first.
-
----
-
-## 📄 License
-
-This project is open-source and free to use.
+MediaFlow Automator PRO delivers a perfect balance between power and simplicity — making media processing faster, smarter, and more efficient.
 
 ---
 Built with ❤️ by GHB-BITE
