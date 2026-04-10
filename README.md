@@ -1,60 +1,9 @@
 # 🎬 MediaFlow Automator PRO — Ultimate Edition
 A Powerful Desktop Media Automation Toolkit built with Python & FFmpeg
 
-MediaFlow Automator PRO is a professional-grade desktop application designed to simplify, automate, and accelerate video/audio processing and media organization — all through a modern, user-friendly interface. 
+🚀 MediaFlow Automator PRO — Smart Media Processing, Zero Effort
 
----
-
-
-🎬 Core Features
-
-🔹 1. FFmpeg Automator
-
-Full control over your media processing:
-
--✂ Video Cutting (Trim segments)
-
--⬇ Video Compression (CRF-based)
-
--🎵 Audio Extraction (MP3, WAV, AAC, etc.)
-
--📦 Batch processing for multiple files
-
-
-
-
-
-🔹 2. Media Organizer
-
-Automatically organize your files:
-
-📁 Sort files by format (mp4, mp3, mkv, etc.)
-
-🔍 Preview mode (Dry Run – no changes applied)
-
-🔁 Optional recursive folder processing
-
-⚡ Fast and safe file moving
-
-
-🔹 3. Smart Task Manager
-
-FIFO task queue system
-
-Real-time progress tracking
-
-Detailed execution logs
-
-Start / Stop control anytime
-
-
-🔹 4. Advanced Console
-
-Live FFmpeg output display
-
-Error tracking and reporting
-
-Timestamped logs for each operation
+An advanced, production-grade solution built for creators and professionals who demand speed and precision. Automate video trimming, CRF-based compression, and batch processing while extracting audio in MP3, AAC, WAV, FLAC, and OGG with ease. Instantly organize files by format across all major types (MP4, MKV, AVI, MOV, WEBM, FLV, MPEG, TS, VOB, M4V, MP3, WAV, AAC, M4A, FLAC, OGG, OPUS) using a safe preview mode and optional recursive scanning. Powered by a robust FIFO task system with real-time tracking, detailed logs, and a live FFmpeg console, it delivers full control, reliability, and clean automation—everything you need to scale your media workflow efficiently.
 
 🖥️ User Interface
 
@@ -98,11 +47,17 @@ Organize an entire media library automatically
 ---
 
 automatically
+
 🏗️ Architecture (For Developers)
+
 Tkinter → User Interface
+
 subprocess → FFmpeg execution
+
 threading → Non-blocking processing
+
 queue → Task management
+
 shutil → File operations
 
 ---
@@ -128,8 +83,11 @@ Export presets (YouTube, TikTok, etc.)
 This project is built with a strong focus on:
 
 Performance ⚡
+
 User Experience 🎯
+
 Clean Architecture 🧠
+
 Scalability 🔧
 
 ---
