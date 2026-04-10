@@ -48,8 +48,7 @@ Click Start
 Monitor progress in real time
 
 
-
-<img width="1328" height="800" alt="Batch video processing — Cut · Compress · Extract audio" src="https://github.com/user-attachments/assets/c6d52917-a475-4b65-a5fd-d0a4c821d0f2" />
+![fiver 5](https://github.com/user-attachments/assets/aee8cd8a-fa2c-48ac-878c-b34243776134)
 
 
 
@@ -64,6 +63,12 @@ Compress large videos to save storage
 Trim specific segments from multiple clips
 
 Organize an entire media library automatically
+
+
+![fiver 6](https://github.com/user-attachments/assets/8fc7bc49-6bd2-47fe-be42-f2ad86a01e75)
+
+
+
 
 ---
 
