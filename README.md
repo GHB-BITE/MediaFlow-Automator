@@ -49,6 +49,10 @@ Monitor progress in real time
 
 
 
+<img width="1328" height="800" alt="Batch video processing — Cut · Compress · Extract audio" src="https://github.com/user-attachments/assets/c6d52917-a475-4b65-a5fd-d0a4c821d0f2" />
+
+
+
 ---
 
 📊 Example Use Cases
