@@ -18,6 +18,8 @@ A developer-inspired modern UI:
 🧩 Modular and scalable layout
 
 
+
+
 📸 Preview 🖼️ Interface
 
 <img width="960" height="751" alt="Capture" src="https://github.com/user-attachments/assets/cea5baf7-3a5a-4448-b666-f8a6f7484fcf" />
@@ -25,16 +27,23 @@ A developer-inspired modern UI:
 
 
 ⚙️ Requirements
+
 Python 3.10+
+
 FFmpeg (included or installed in system PATH)
 
 ---
 
 🧠 How It Works
+
 Select video files or an entire folder
+
 Choose an operation (Cut / Compress / Extract Audio)
+
 Add tasks to the queue
+
 Click Start
+
 Monitor progress in real time
 
 
@@ -42,9 +51,13 @@ Monitor progress in real time
 ---
 
 📊 Example Use Cases
+
 Convert multiple videos to MP3 in one click
+
 Compress large videos to save storage
+
 Trim specific segments from multiple clips
+
 Organize an entire media library automatically
 
 ---
@@ -69,15 +82,22 @@ shutil → File operations
 This is more than just a tool:
 
 ✔ Saves hours of manual work
+
 ✔ Eliminates complex workflows
+
 ✔ Suitable for both beginners and professionals
+
 ✔ Easily extendable for future needs
 
 --- 
 📈 Scalability & Future Improvements
+
 GPU acceleration support
+
 Web-based interface
+
 AI-powered video processing
+
 Export presets (YouTube, TikTok, etc.)
 
 ---
