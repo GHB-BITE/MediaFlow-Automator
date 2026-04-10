@@ -10,8 +10,11 @@ An advanced, production-grade solution built for creators and professionals who 
 A developer-inspired modern UI:
 
 🌙 Dark Mode design
+
 🎨 Dynamic color feedback (success, error, progress)
+
 🔔 Toast notifications after completion
+
 🧩 Modular and scalable layout
 
 
