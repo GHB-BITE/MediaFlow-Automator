@@ -72,8 +72,6 @@ Organize an entire media library automatically
 
 ---
 
-automatically
-
 🏗️ Architecture (For Developers)
 
 Tkinter → User Interface
