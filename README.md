@@ -13,8 +13,11 @@ MediaFlow Automator PRO is a professional-grade desktop application designed to 
 Full control over your media processing:
 
 -✂ Video Cutting (Trim segments)
+
 -⬇ Video Compression (CRF-based)
+
 -🎵 Audio Extraction (MP3, WAV, AAC, etc.)
+
 -📦 Batch processing for multiple files
 
 
