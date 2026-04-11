@@ -863,11 +863,11 @@ class OrganizerTab(tk.Frame):
                     "success",
                 )
                 self.after(0, lambda m=moved, e=errors: messagebox.showinfo(
-                    "✅  Organisation terminée",
-                    f"Opération accomplie avec succès !\n\n"
-                    f"📦  Fichiers déplacés : {m}\n"
-                    f"✖   Erreurs           : {e}\n\n"
-                    f"Consultez la console pour le rapport complet.",
+                    "✅  File Organization Completed ",
+                    f" Operation Successful !\n\n"
+                    f"📦  📦 Files Successfully Moved : {m}\n"
+                    f"✖    Errors           : {e}\n\n"
+                    f"View the console for detailed logs..",
                 ))
             elif errors == 0 and moved == 0:
                 self._console.write(
